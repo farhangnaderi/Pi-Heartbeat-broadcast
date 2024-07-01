@@ -1,3 +1,17 @@
+"""
+Pi-Heartbeat-Sender
+
+Author: Farhang Naderi
+Email: farhang.naderi@uri.edu
+License: MIT License
+Year: 2024
+
+Description:
+This Python script runs on a Raspberry Pi to send heartbeat signals via I2C to an ATtiny85 microcontroller.
+The heartbeat signals are sent periodically to ensure the ATtiny85 remains active and powers on the servo rail.
+If the heartbeat signals stop, the ATtiny85 will power down the servo rail for safety.
+"""
+
 import smbus
 import time
 
